@@ -1,8 +1,9 @@
 const imageKit = require('@imagekit/nodejs');
+require('dotenv').config();
 
 
 const imagekit = new imageKit({
-    privateKey : "private_KiU7U4duIb3vxlT25lDriYjxdEw="
+    privateKey : process.env.PRIVATE_KEY
 });
 
 
